@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [10,5,2,8,-1,6,8];
+    function findMaxScore(array) {
+        for (let i = 0; i < array.length; i++) {
+            let max = array[0];
+            if (max < array[i]) {
+                max = array[i];
+            }
+            return max;
+        }
+
+    }
+    document.write(findMaxScore(array));
+</script>
+</body>
+</html>
